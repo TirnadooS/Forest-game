@@ -3,15 +3,33 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Лесная бродилка</title>
+    <title>Лесное приключение</title>
     <link rel="stylesheet" href="style.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+    </style>
 </head>
 <body>
     <div class="game-container">
-        <h1>🍓 Лесная бродилка</h1>
-        <canvas id="gameCanvas" width="400" height="400"></canvas>
-        <div class="score">Ягоды: <span id="score">0</span>/10</div>
-        <button id="restartButton">Начать заново</button>
+        <header>
+            <h1>🍓 Лесное приключение</h1>
+            <div class="hud">
+                <div class="score">Ягоды: <span id="score">0</span>/<span id="total">10</span></div>
+                <div class="level">Уровень: <span id="level">1</span></div>
+            </div>
+        </header>
+        
+        <canvas id="gameCanvas"></canvas>
+        
+        <div class="controls">
+            <button id="restartButton">Новая игра</button>
+            <div class="mobile-controls">
+                <button class="arrow up">↑</button>
+                <button class="arrow down">↓</button>
+                <button class="arrow left">←</button>
+                <button class="arrow right">→</button>
+            </div>
+        </div>
     </div>
     <script src="game.js"></script>
 </body>
