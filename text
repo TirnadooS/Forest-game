@@ -1,0 +1,11 @@
+/Forest-game
+├── index.html
+├── style.css
+├── game.js
+├── assets/
+│   ├── player.png
+│   ├── berry.png
+│   └── background.jpg
+└── sounds/
+    ├── pickup.mp3
+    └── walk.mp3
